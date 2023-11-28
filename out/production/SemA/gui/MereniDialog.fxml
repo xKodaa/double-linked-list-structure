@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="400.0" minWidth="346.0" prefHeight="400.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MereniDialogController">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="26.0" prefWidth="346.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu fx:id="menuItemRandomGen" mnemonicParsing="false" onAction="#generateRandomData" text="Data">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Random generate" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TextField fx:id="tfIdSenzoru" layoutX="226.0" layoutY="83.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="50.0" />
+      <TextField fx:id="tfSpotrebaNT" layoutX="217.0" layoutY="333.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="300.0" />
+      <TextField fx:id="tfSpotrebaVt" layoutX="217.0" layoutY="286.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="250.0" />
+      <DatePicker fx:id="datePicker" layoutX="200.0" layoutY="125.0" maxWidth="150.0" minWidth="150.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0" />
+      <ChoiceBox fx:id="cBTypSenzoru" layoutX="225.0" layoutY="168.0" prefWidth="150.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="150.0" />
+      <TextField fx:id="tfSpotrebaM3" layoutX="217.0" layoutY="240.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="200.0" />
+      <Label layoutX="93.0" layoutY="73.0" text="ID senzoru" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="52.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="83.0" text="Spotřeba NT" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="302.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="83.0" text="Spotřeba VT" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="252.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="83.0" text="Spotřeba m3" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="202.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="83.0" text="Typ senzoru" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="152.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="83.0" text="Čas měření" AnchorPane.rightAnchor="220.0" AnchorPane.topAnchor="102.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnOk" layoutX="104.0" layoutY="360.0" minWidth="60.0" mnemonicParsing="false" onAction="#submitMereni" text="OK" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="75.0" />
+      <Button fx:id="btnCancel" layoutX="175.0" layoutY="360.0" minWidth="60.0" mnemonicParsing="false" onAction="#cancelMereni" text="Cancel" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="75.0" />
+   </children>
+</AnchorPane>
